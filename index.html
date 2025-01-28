@@ -4,8 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shota Tevdorashvili</title>
+
+    <link rel="shortcut icon" style="x-icon" href="../static/img/ShotaTevdorashviliLogo.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Include AOS CSS for animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Include Font Awesome CSS for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar" style="">
+        <div class="container">
+          <a class="navbar-brand" onclick="scrollToTop()">Shota Tevdorashvili</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" onclick="scrollToTop()">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="scrollToAbout()">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="scrollToHarvard()">Harvard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="scrollToProjects()">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="scrollToBottom()">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- HOME -->
+    <div id="home-container" class="container mt-5 d-flex flex-column justify-content-center align-items-center home-container">
+        <div class="row align-items-center text-container">
+            <div class="col-10 d-flex flex-column justify-content-center align-items-start">
+                <h1 class="text-white mb-4">I'm a Harvard-certified Full Stack Developer with Django and .NET expertise, ready to innovate and excel.</h1>
+                <div class="mt-2">
+                    <button onclick="scrollToBottom()"type="button" class="btn btn-light me-2">Start a Project</button>
+                    <button onclick="scrollToAbout()" type="button" class="btn btn-light">More About Me</button>
+                </div>
+            </div>
+            <div class="col-2 d-flex flex-column justify-content-center align-items-center" id="iconContainer">
+                <a href="https://github.com/Sh0utaa" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" class="bi bi-github mb-4" viewBox="0 0 16 16" id="svg">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                    </svg>
+                </a>
+                <a style="cursor: pointer;" onclick="scrollToBottom()" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" class="bi bi-envelope mb-4" viewBox="0 0 16 16" id="svg">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/shota-tevdorashvili-30b78b263/" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" class="bi bi-linkedin mb-4" viewBox="0 0 16 16" id="svg">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                    </svg>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="fluid-container d-flex justify-content-center align-items-center" style="height: 650px; background-color: rgb(15, 29, 42);" id="about-container">
+        <div class="row">
+            <div class="col d-flex flex-column justify-content-center align-items-center text-center">
+                <h1 style="color: white;">MORE ABOUT ME</h1>
+                <div class="container mt-3">
+                    <p style="color: white; font-size: 20px;">Hello! I'm a passionate and motivated Full Stack Web Developer with a strong foundation mainly in backend technologies. I specialize in creating dynamic and responsive web applications using html, css, javascript and bootstrap for the frontend and the .NET framework or Django for the backend. I am eager to bring my expertise and enthusiasm to new and exciting opportunities. Whether it's building scalable web applications, optimizing user experiences, or solving challenging technical problems, I am ready to contribute and grow in a dynamic and collaborative environment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HARVARD -->
+
+    <div class="fluid-container d-flex justify-content-center align-items-center harvard-container" id="harvard-container">
+        <div class="row">
+            <div class="d-flex flex-column justify-content-center align-items-center" style="width: 100%;">
+                <div style="width: 70%;" class="col d-flex flex-column justify-content-center align-items-center">
+                    <h1>checkout my certificates</h1>
+                    <p style="font-size: 20px;">I hold two certificates from Harvard University, CS50x and CS50w, which have equipped me with the essential skills, basic understanding of computer science and knowledge to tackle complex web development projects. My journey in web development has been driven by a continuous desire to learn and innovate, ensuring that I stay updated with the latest industry trends and best practices.</p>
+                </div>    
+            </div>
+            <div class="col-12 col-md-6 mt-5">
+                <img src="../img/CS50x.png" alt="CS50x Certificate">
+            </div>
+            <div class="col-12 col-md-6 mt-5">
+                <img src="../img/CS50w.png" alt="CS50w Certificate">
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="container" style="height: 1000px;" id='projects-container'>
+        <h1 style="color: white;">PROJECTS COMING SOON</h1>
+    </div>
+
+    <!-- CONTACTS -->
+    <div class="container_fluid" style="background-color: rgb(15, 29, 42);">
+        <div class="container py-4 d-flex flex-column align-items-center" >
+            <div class="row w-100">
+                <!-- Bootstrap 5 starter form -->
+                <div class="col-12 col-md-6 mb-4 mb-md-0">
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+                        <input type="hidden" name="access_key" value="38796eac-2f87-437c-babd-b4d2c0b2d59b">
+                        <!-- Name input -->
+                        <div class="mb-3">
+                            <label class="form-label" for="name">Name</label>
+                            <input class="form-control" id="name" type="text" placeholder="Name" autocomplete="off" name="name" />
+                        </div>
+                        <!-- Email address input -->
+                        <div class="mb-3">
+                            <label class="form-label" for="emailAddress">Email Address</label>
+                            <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" autocomplete="off" name="email"/>
+                        </div>
+                        <!-- Message input -->
+                        <div class="mb-3">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea class="form-control" id="message" name="message" placeholder="Message" style="height: 10rem;" required></textarea>
+                        </div>
+                        <!-- Form submit button -->
+                        <div class="d-grid">
+                            <button class="btn btn-light" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Contact information -->
+                <div class="col-12 col-md-6 contact-info d-flex flex-column justify-content-center align-items-center p-4">
+                    <h1>Contact me on</h1>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/shota-tevdorashvili-30b78b263/">Linkedin</a>
+                        </li>
+                        <li>Email: shotatevdorashvilibusiness@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

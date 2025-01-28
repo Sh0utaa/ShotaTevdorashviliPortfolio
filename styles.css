@@ -1,0 +1,112 @@
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/altumcode-dC6Pb2JdAqs-unsplash.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+#navbar {
+    transition: background-color 0.5s ease;
+}
+#navbar a {
+  cursor: pointer;
+}
+
+
+.home-container {
+  height: 600px;
+}
+.btn-light:hover {
+  background-color: #ffffffe3;
+  color: #333;
+}
+
+.bi {
+  width: 40px;
+  height: 40px;
+}
+
+.text-container {
+  height: 100%;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+@media (max-width: 767.98px) {
+  h1 {
+      font-size: 35px;
+  }
+  .col-10 {
+      width: 100%;
+  }
+  .col-2 {
+      width: 100%;
+      text-align: center;
+  }
+  .text-container {
+      height: 70%;
+  }
+  svg {
+      margin-right: 15px;
+  }
+  .home-container {
+      height: 750px;
+  }
+}
+
+
+div{
+  overflow-x: hidden;
+}
+img {
+  max-width: 90%; 
+  max-height: 90%; 
+  display: block; 
+  margin: auto;
+}
+
+.harvard-container {
+  height: 1000px; background-color: white;
+}
+
+@media (max-width: 767.98px) {
+  img {
+      max-width: 80%; 
+      max-height: 80%; 
+      display: block; 
+  }
+  .harvard-container {
+      height: 1500px;
+  }
+}
+
+
+
+label {
+  color: white;
+}
+.contact-info h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.contact-info ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.contact-info li {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+a {
+text-decoration: none; 
+color: white; 
+}
+a:hover {
+  color: gray;
+}
