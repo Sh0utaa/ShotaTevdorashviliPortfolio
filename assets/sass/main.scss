@@ -690,6 +690,10 @@ $size-header-pad: 4em;
 			}
 
 			img {
+				border-radius: 100%;
+				aspect-ratio: 1/1;
+				overflow:hidden;
+				object-fit: cover;
 				width: 100%;
 			}
 		}
