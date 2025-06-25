@@ -1,224 +1,463 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shota Tevdorashvili</title>
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Strata by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-    <link rel="shortcut icon" style="x-icon" href="./Images/ShotaTevdorashviliLogo.png">
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+					<h1><strong>I am Strata</strong>, a super simple<br />
+					responsive site template freebie<br />
+					crafted by <a href="http://html5up.net">HTML5 UP</a>.</h1>
+				</div>
+			</header>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Include AOS CSS for animations -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <!-- Include Font Awesome CSS for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./Images/altumcode-dC6Pb2JdAqs-unsplash.jpg');">
-    
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar" style="">
-        <div class="container">
-          <a class="navbar-brand" onclick="scrollToTop()">Shota Tevdorashvili</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" onclick="scrollToTop()">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" onclick="scrollToAbout()">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" onclick="scrollToHarvard()">Harvard</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" onclick="scrollToProjects()">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" onclick="scrollToBottom()">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+		<!-- Main -->
+			<div id="main">
 
-    <!-- HOME -->
-    <div id="home-container" class="container mt-5 d-flex flex-column justify-content-center align-items-center home-container">
-        <div class="row align-items-center text-container">
-            <div class="col-10 d-flex flex-column justify-content-center align-items-start">
-                <h1 class="text-white mb-4">I'm a Harvard-certified Full Stack Developer with Django and .NET expertise, ready to innovate and excel.</h1>
-                <div class="mt-2">
-                    <button onclick="scrollToBottom()"type="button" class="btn btn-light me-2">Start a Project</button>
-                    <button onclick="scrollToAbout()" type="button" class="btn btn-light">More About Me</button>
-                </div>
-            </div>
-            <div class="col-2 d-flex flex-column justify-content-center align-items-center" id="iconContainer">
-                <a href="https://github.com/Sh0utaa" target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" class="bi bi-github mb-4" viewBox="0 0 16 16" id="svg">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                    </svg>
-                </a>
-                <a style="cursor: pointer;" onclick="scrollToBottom()" target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" class="bi bi-envelope mb-4" viewBox="0 0 16 16" id="svg">
-                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
-                    </svg>
-                </a>
-                <a href="https://www.linkedin.com/in/shota-tevdorashvili-30b78b263/" target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" class="bi bi-linkedin mb-4" viewBox="0 0 16 16" id="svg">
-                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-                    </svg>
-                </a>
-            </div>
-            
-        </div>
-    </div>
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>Ipsum lorem dolor aliquam ante commodo<br />
+							magna sed accumsan arcu neque.</h2>
+						</header>
+						<p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</section>
 
-    <!-- ABOUT -->
-    <div class="fluid-container d-flex justify-content-center align-items-center" style="height: 650px; background-color: rgb(15, 29, 42);" id="about-container">
-        <div class="row">
-            <div class="col d-flex flex-column justify-content-center align-items-center text-center">
-                <h1 style="color: white;">MORE ABOUT ME</h1>
-                <div class="container mt-3">
-                    <p style="color: white; font-size: 20px;">Hello! I'm a passionate and motivated Full Stack Web Developer with a strong foundation mainly in backend technologies. I specialize in creating dynamic and responsive web applications using html, css, javascript and bootstrap for the frontend and the .NET framework or Django for the backend. I am eager to bring my expertise and enthusiasm to new and exciting opportunities. Whether it's building scalable web applications, optimizing user experiences, or solving challenging technical problems, I am ready to contribute and grow in a dynamic and collaborative environment.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+				<!-- Two -->
+					<section id="two">
+						<h2>Recent Work</h2>
+						<div class="row">
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+								<h3>Magna sed consequat tempus</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+								<h3>Ultricies lacinia interdum</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+								<h3>Tortor metus commodo</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+								<h3>Quam neque phasellus</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
+								<h3>Nunc enim commodo aliquet</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
+								<h3>Risus ornare lacinia</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+						</div>
+						<ul class="actions">
+							<li><a href="#" class="button">Full Portfolio</a></li>
+						</ul>
+					</section>
 
-    <!-- HARVARD -->
+				<!-- Three -->
+					<section id="three">
+						<h2>Get In Touch</h2>
+						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+						<div class="row">
+							<div class="col-8 col-12-small">
+								<form method="post" action="#">
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+									</div>
+								</form>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</div>
+							<div class="col-4 col-12-small">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+										1234 Somewhere Rd.<br />
+										Nashville, TN 00000<br />
+										United States
+									</li>
+									<li>
+										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+										000-000-0000
+									</li>
+									<li>
+										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+										<a href="#">hello@untitled.tld</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
 
-    <div class="fluid-container d-flex justify-content-center align-items-center harvard-container" id="harvard-container">
-        <div class="row">
-            <div class="d-flex flex-column justify-content-center align-items-center" style="width: 100%;">
-                <div style="width: 70%;" class="col d-flex flex-column justify-content-center align-items-center">
-                    <h1>checkout my certificates</h1>
-                    <p style="font-size: 20px;">I hold two certificates from Harvard University, CS50x and CS50w, which have equipped me with the essential skills, basic understanding of computer science and knowledge to tackle complex web development projects. My journey in web development has been driven by a continuous desire to learn and innovate, ensuring that I stay updated with the latest industry trends and best practices.</p>
-                </div>    
-            </div>
-            <div class="col-12 col-md-6 mt-5">
-                <img src="./Images/CS50x.png" alt="CS50x Certificate">
-            </div>
-            <div class="col-12 col-md-6 mt-5">
-                <img src="./Images/CS50w.png" alt="CS50w Certificate">
-            </div>
-        </div>
-    </div>
+				<!-- Four -->
+				<!--
+					<section id="four">
+						<h2>Elements</h2>
 
-    <!-- PROJECTS -->
-    <div class="container text-white py-5" id="projects-container">
-        <h1 class="text-center mb-5">PROJECTS</h1>
-        <div class="row g-4">
-            <!-- Project 1: Fragrance API -->
-            <div class="col-12">
-                <div style="background-color: rgba(0, 0, 0, 0.301);" class="card text-white">
-                    <div class="row g-0 align-items-center">
-                        <!-- Image Section -->
-                        <div class="col-md-4">
-                            <img src="./Images/VisualStudioScreenshot.png" class="img-fluid rounded-start" alt="Fragrance API Screenshot">
-                        </div>
-                        <!-- Text Section -->
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h2 class="card-title">Fragrance API</h2>
-                                <p class="card-text">
-                                    A backend Web API built with ASP.NET Core, featuring JWT authentication, roles, posts, and comments.
-                                    It integrates with an SSMS database for managing fragrance-related data.
-                                </p>
-                                <ul class="list-unstyled">
-                                    <li>✔ JWT-based Authentication</li>
-                                    <li>✔ Role-based Authorization</li>
-                                    <li>✔ Post and Comment Management</li>
-                                    <li>✔ SSMS Database Integration</li>
-                                </ul>
-                                <a href="https://github.com/Sh0utaa/ParfumeExpressApi" style="background-color: rgb(15, 29, 42); color: white;" class="btn mt-3">View Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Project 2: React + Appwrite Fullstack Webapp -->
-            <div class="col-12">
-                <div style="background-color: rgba(0, 0, 0, 0.301);"  class="card text-white">
-                    <div class="row g-0 align-items-center">
-                        <!-- Image Section -->
-                        <div class="col-md-4">
-                            <img src="./Images/ParfumeExpressAppScreenshot.png" class="img-fluid rounded-start" alt="React + Appwrite Webapp Screenshot">
-                        </div>
-                        <!-- Text Section -->
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h2 class="card-title">React + Appwrite Fullstack Webapp</h2>
-                                <p class="card-text">
-                                    A fullstack web application with React for the frontend and Appwrite for the backend. 
-                                    Currently, the backend supports authentication, and the frontend is fully designed and functional.
-                                </p>
-                                <ul class="list-unstyled">
-                                    <li>✔ React-based Frontend</li>
-                                    <li>✔ Appwrite Backend with Authentication</li>
-                                    <li>✔ Responsive UI Design</li>
-                                    <li>✔ Planned Features: User Profile Management</li>
-                                </ul>
-                                <a href="https://parfume-express.vercel.app/" style="background-color: rgb(15, 29, 42); color: white;" class="btn mt-3">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
+						<section>
+							<h4>Text</h4>
+							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+							<hr />
+							<header>
+								<h4>Heading with a Subtitle</h4>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<header>
+								<h5>Heading with a Subtitle</h5>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<hr />
+							<h2>Heading Level 2</h2>
+							<h3>Heading Level 3</h3>
+							<h4>Heading Level 4</h4>
+							<h5>Heading Level 5</h5>
+							<h6>Heading Level 6</h6>
+							<hr />
+							<h5>Blockquote</h5>
+							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+							<h5>Preformatted</h5>
+							<pre><code>i = 0;
 
-    <!-- CONTACTS -->
-    <div class="container_fluid" style="background-color: rgb(15, 29, 42);">
-        <div class="container py-4 d-flex flex-column align-items-center" >
-            <div class="row w-100">
-                <!-- Bootstrap 5 starter form -->
-                <div class="col-12 col-md-6 mb-4 mb-md-0">
-                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
-                        <input type="hidden" name="access_key" value="38796eac-2f87-437c-babd-b4d2c0b2d59b">
-                        <!-- Name input -->
-                        <div class="mb-3">
-                            <label class="form-label" for="name">Name</label>
-                            <input class="form-control" id="name" type="text" placeholder="Name" autocomplete="off" name="name" />
-                        </div>
-                        <!-- Email address input -->
-                        <div class="mb-3">
-                            <label class="form-label" for="emailAddress">Email Address</label>
-                            <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" autocomplete="off" name="email"/>
-                        </div>
-                        <!-- Message input -->
-                        <div class="mb-3">
-                            <label class="form-label" for="message">Message</label>
-                            <textarea class="form-control" id="message" name="message" placeholder="Message" style="height: 10rem;" required></textarea>
-                        </div>
-                        <!-- Form submit button -->
-                        <div class="d-grid">
-                            <button class="btn btn-light" type="submit">Submit</button>
-                        </div>
-                    </form>
-                </div>
-                <!-- Contact information -->
-                <div class="col-12 col-md-6 contact-info d-flex flex-column justify-content-center align-items-center p-4">
-                    <h1>Contact me on</h1>
-                    <ul>
-                        <li>
-                            <a href="https://www.linkedin.com/in/shota-tevdorashvili-30b78b263/">Linkedin</a>
-                        </li>
-                        <li>Email: shotatevdorashvilibusiness@gmail.com</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
 
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+						</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-</body>
+						<section>
+							<h4>Lists</h4>
+							<div class="row">
+								<div class="col-6 col-12-xsmall">
+									<h5>Unordered</h5>
+									<ul>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+									<h5>Alternate</h5>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<h5>Ordered</h5>
+									<ol>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ol>
+									<h5>Icons</h5>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<h5>Actions</h5>
+							<ul class="actions">
+								<li><a href="#" class="button primary">Default</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions small">
+								<li><a href="#" class="button primary small">Small</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<div class="row">
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary small">Small</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary fit">Default</a></li>
+										<li><a href="#" class="button fit">Default</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary small fit">Small</a></li>
+										<li><a href="#" class="button small fit">Small</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<h4>Table</h4>
+							<h5>Default</h5>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+
+							<h5>Alternate</h5>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</section>
+
+						<section>
+							<h4>Buttons</h4>
+							<ul class="actions">
+								<li><a href="#" class="button primary">Primary</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button large">Large</a></li>
+								<li><a href="#" class="button">Default</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<ul class="actions fit">
+								<li><a href="#" class="button primary fit">Fit</a></li>
+								<li><a href="#" class="button fit">Fit</a></li>
+							</ul>
+							<ul class="actions fit small">
+								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
+								<li><a href="#" class="button fit small">Fit + Small</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+							</ul>
+							<ul class="actions">
+								<li><span class="button primary disabled">Primary</span></li>
+								<li><span class="button disabled">Default</span></li>
+							</ul>
+						</section>
+
+						<section>
+							<h4>Form</h4>
+							<form method="post" action="#">
+								<div class="row gtr-uniform gtr-50">
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<select name="demo-category" id="demo-category">
+											<option value="">- Category -</option>
+											<option value="1">Manufacturing</option>
+											<option value="1">Shipping</option>
+											<option value="1">Administration</option>
+											<option value="1">Human Resources</option>
+										</select>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+										<label for="demo-priority-low">Low Priority</label>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-normal" name="demo-priority">
+										<label for="demo-priority-normal">Normal Priority</label>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-high" name="demo-priority">
+										<label for="demo-priority-high">High Priority</label>
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="checkbox" id="demo-copy" name="demo-copy">
+										<label for="demo-copy">Email me a copy of this message</label>
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="checkbox" id="demo-human" name="demo-human" checked>
+										<label for="demo-human">I am a human and not a robot</label>
+									</div>
+									<div class="col-12">
+										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+
+						<section>
+							<h4>Image</h4>
+							<h5>Fit</h5>
+							<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+								</div>
+							</div>
+							<h5>Left &amp; Right</h5>
+							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+						</section>
+
+					</section>
+				-->
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
