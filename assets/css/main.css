@@ -1641,10 +1641,10 @@ input[type=radio] + label:before {
   margin-bottom: 1.5em;
 }
 .video-wrapper.video {
-  float: left;
-  margin-right: 1.5em;
+  float: right;
+  margin-left: 1.5em;
   width: 100%;
-  max-width: 360px;
+  max-width: 60%;
   padding-bottom: 45%;
 }
 .video-wrapper iframe {
@@ -1716,6 +1716,15 @@ input[type=radio] + label:before {
 .image img {
   border-radius: 0.35em;
   display: block;
+}
+.image.core {
+  float: left;
+  margin: 0 1.5em 1em 0;
+  top: 0.25em;
+  max-width: 60%;
+}
+.image.core img {
+  width: 100%;
 }
 .image.left {
   float: left;
