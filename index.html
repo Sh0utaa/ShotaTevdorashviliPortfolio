@@ -66,6 +66,7 @@
 							<li>The main application: <a href="https://dlt.shotatevdorashvili.com" target="_blank">dlt.shotatevdorashvili.com</a></li>
 							<li>The API endpoint: <a href="https://dlt.api.shotatevdorashvili.com" target="_blank">dlt.api.shotatevdorashvili.com</a></li>
 							<li><a href="https://github.com/Sh0utaa/DLTProj/">Source code</a></li>
+
 						</ul>
 						<em>Deployment is currently in progress and will be live within the week.</em>
 						</p>
@@ -112,19 +113,35 @@
 				<!-- Three -->
 					<section id="three">
 						<h2>Get In Touch</h2>
-						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+						<p>
+							EMAIL SENDING ONLY WORKS ON LOCALHOST FOR NOW
+						</p>
+
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<form method="post" action="#">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" autocomplete="off" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" autocomplete="off" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4" autocomplete="off"></textarea></div>
+
+								<form id="contactForm">
+								<div class="row gtr-uniform gtr-50">
+									<div class="col-6 col-12-xsmall">
+									<input type="text" name="name" id="name" placeholder="Name" autocomplete="off" required />
 									</div>
+									<div class="col-6 col-12-xsmall">
+									<input type="email" name="email" id="email" placeholder="Email" autocomplete="off" required />
+									</div>
+									<div class="col-12">
+									<textarea name="message" id="message" placeholder="Message" rows="4" autocomplete="off" required></textarea>
+									</div>
+									<div class="col-12">
+									<div class="col-12">
+									<p id="formResponse" style="color: green;"></p>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" /></li>
+									</ul>
+									</div>
+								</div>
 								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
+
 							</div>
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
