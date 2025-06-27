@@ -2,8 +2,6 @@ make video and photo responsive for mobile
 
 record the CopartAPI demo
 
-make email sending work via API
+fix youtube video size + pfp, core picture onclicked should zoom in 
 
-make shota@shotatevdorashvili.com work on gmail
-
-make dlt@shotatevdorashvili.com send mail on DLT
+fix google analytics
