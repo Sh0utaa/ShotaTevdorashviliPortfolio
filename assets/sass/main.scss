@@ -602,6 +602,12 @@ $size-header-pad: 4em;
 			width: 100%;
 			max-width: 60%; 
 			padding-bottom: 45%;
+
+			@media (max-width: 768px) {
+				max-width: 100%;
+				float: none;
+				margin: 0 0 1em 0;
+			}
 		}
 
 			iframe {
@@ -686,6 +692,12 @@ $size-header-pad: 4em;
 
 			img {
 				width: 100%;
+			}
+
+			@media (max-width: 768px) {
+				max-width: 100%;
+				float: none;
+				margin: 0 0 1em 0;
 			}
 		}
 
