@@ -31,7 +31,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
   };
 
   try {
-    const response = await fetch("http://localhost:5279/api/email/send-to-shota", {
+    const response = await fetch("https://dlt-api.shotatevdorashvili.com/api/email/send-to-shota", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
