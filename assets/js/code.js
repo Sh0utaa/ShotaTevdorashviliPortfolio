@@ -55,3 +55,8 @@ document.getElementById("contactForm").addEventListener("submit", async function
     console.error("Email sending failed:", error);
   }
 });
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  const mailElement = document.getElementById("shotatevdorashvilimail");
+  mailElement.textContent = 'shota@shotatevdorashvili.com';
+})
